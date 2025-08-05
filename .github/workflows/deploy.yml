@@ -6,8 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write
-
+  contents: write  # 깃허브 페이지 배포를 위한 권한
 
 jobs:
   build-and-deploy:
@@ -23,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ./client
 
       - name: Build project
