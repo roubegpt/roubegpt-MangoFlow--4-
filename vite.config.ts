@@ -8,7 +8,7 @@ export default defineConfig({
     alias: {
       "@": "/src",
       "@shared": "/shared",
-      "@assets": "/attached_assets",
-    },
-  },
+      "@assets": "/attached_assets"
+    }
+  }
 });
