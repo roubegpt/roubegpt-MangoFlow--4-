@@ -1,11 +1,12 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react-swc";
+import tsconfigPaths from "vite-tsconfig-paths";
 
+// 배포 경로(base) 설정 필요
 export default defineConfig({
-  root: "client",                   // index.html이 위치한 폴더 경로
-  base: "/roubegpt-MangoFlow--4-/", // GitHub Pages repo 경로와 정확히 일치시킬 것
+  base: "/roubegpt-MangoFlow--4-/",
+  plugins: [react(), tsconfigPaths()],
   build: {
-    outDir: "../dist",              // 빌드 결과물 위치 (루트 /dist)
-  },
-  plugins: [react()]
+    outDir: "../dist"
+  }
 });
