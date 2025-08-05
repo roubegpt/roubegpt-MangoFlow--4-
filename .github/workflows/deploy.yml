@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # 깃허브 페이지 배포를 위한 권한
+  contents: write # GitHub Pages 배포 권한 명시
 
 jobs:
   build-and-deploy:
