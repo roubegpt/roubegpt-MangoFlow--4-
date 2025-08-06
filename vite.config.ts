@@ -1,13 +1,17 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
-  root: "client",
-  base: "/roubegpt-MangoFlow--4-/",
-  build: {
-    outDir: "../dist",
-    emptyOutDir: true,
+  base: '/roubegpt-MangoFlow--4-/',  // GitHub Pages 경로 맞춤 설정
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './client'),
+    },
   },
-  plugins: [react(), tsconfigPaths()],
-});
+  root: 'client',
+  build: {
+    outDir: '../dist',
+  },
+})
