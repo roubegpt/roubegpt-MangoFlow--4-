@@ -1,11 +1,13 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: ["./client/src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      // 예: 커스텀 컬러, 폰트 등 추가 가능
+    }
   },
-  plugins: [],
+  plugins: []
 };
 
 export default config;
