@@ -1,9 +1,11 @@
-import { defineConfig } from "tailwindcss";
+import type { Config } from "tailwindcss";
 
-export default defineConfig({
-  content: ["./client/src/**/*.{js,ts,jsx,tsx}"],
+const config: Config = {
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-});
+};
+
+export default config;
