@@ -1,11 +1,7 @@
 import React from "react";
 
 function App() {
-  return (
-    <div>
-      <h1>Hello MangoFlow</h1>
-    </div>
-  );
+  return <div>Hello MangoFlow</div>;
 }
 
 export default App;
