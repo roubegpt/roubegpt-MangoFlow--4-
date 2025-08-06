@@ -6,7 +6,8 @@ export default defineConfig({
   root: "client",
   base: "/roubegpt-MangoFlow--4-/",
   build: {
-    outDir: "../dist"
+    outDir: "../dist",
+    emptyOutDir: true,
   },
-  plugins: [react(), tsconfigPaths()]
+  plugins: [react(), tsconfigPaths()],
 });
