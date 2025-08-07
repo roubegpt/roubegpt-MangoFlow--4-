@@ -2,14 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --border: hsl(20, 5.9%, 90%);
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-}
-
-/* border-border 클래스가 없으므로 tailwind.config.ts 에서 정의한 것을 참고하세요 */
+/* 추가 스타일 여기에 작성 */
